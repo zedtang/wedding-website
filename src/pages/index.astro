@@ -218,6 +218,15 @@ const meta = {
 
   <GlobeView client:only="react" labels={labels} arcs={{ enabled: true, count: 12 }} />
 
+  <!-- Add to Calendar Block ********* -->
+  <Block
+    enabled={true}
+    title={`<span class="extra-fancy">${SITE.weddingDate}</span>`}
+    content={'<div class="fancy">Jiaheng and Flora\'s Wedding<br>Save the date and add to your calendar.</div>'}
+  />
+  <div id="add-to-calendar"></div>
+
+
   <!-- Locations 'link' block -->
   <Block
     enabled={true}

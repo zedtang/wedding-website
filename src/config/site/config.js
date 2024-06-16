@@ -5,7 +5,7 @@ import blog from './blog';
 
 const CONFIG = {
   // The name of the website
-  name: 'G + L',
+  name: 'J + F',
   // The origin of the website (without trailing slash)
   origin: 'https://gl.birki.io',
   // The base pathname of the website
@@ -14,13 +14,13 @@ const CONFIG = {
   trailingSlash: false,
 
   // The website title which is displayed in the browser tab
-  title: 'G + L',
+  title: 'J + F',
 
   // wedding data
-  weddingDate: '09/30/2024',
+  weddingDate: '10/03/2024',
 
   // Website description
-  description: 'Grant and Leah are getting married! 💍',
+  description: 'Jiaheng and Flora are getting married! 💍',
 
   // The website's preview image that is displayed when sharing the website on social media
   defaultImage: defaultImage,

@@ -7,7 +7,7 @@ const note = {
   enabled: true,
 
   // Note text with HTML support
-  text: `<span class="fancy">G + L are getting married on ${SITE.weddingDate}</span>`,
+  text: `<span class="fancy">J + F are getting married on ${SITE.weddingDate}</span>`,
 
   // Optional note icon (prefix to the text)
   icon: {
