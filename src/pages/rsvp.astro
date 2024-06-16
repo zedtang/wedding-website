@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
+
+const meta = {
+  title: "RSVP - Your Wedding Title",
+  description: "RSVP for the wedding.",
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">RSVP</h1>
+    <iframe
+      src="https://forms.gle/rDKVAHPLFHEEFAiS9"
+      width="100%"
+      height="600"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      style="border: 1px solid #ddd; border-radius: 8px; padding: 10px;"
+    >
+      Loading…
+    </iframe>
+  </div>
+</Layout>
+

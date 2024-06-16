@@ -28,6 +28,8 @@ import ImageGallery from '~/components/widgets/Gallery.jsx';
 import gallery from '~/config/home/gallery';
 
 import labels from '../config/components/map.json';
+import RSVPButton from '~/components/widgets/RSVPButton.astro';
+import RSVPForm from '~/components/widgets/RSVPForm.astro';
 
 const meta = {
   title: SITE.title,
@@ -209,15 +211,6 @@ const meta = {
     )
   }
 
-  <Block
-    backgroundCss={''}
-    enabled={true}
-    highlight={'Travel Globe 🌍'}
-    content={`Give the globe a spin and see where we've been!`}
-  />
-
-  <GlobeView client:only="react" labels={labels} arcs={{ enabled: true, count: 12 }} />
-
   <!-- Add to Calendar Block ********* -->
   <Block
     enabled={true}
@@ -226,6 +219,27 @@ const meta = {
   />
   <div id="add-to-calendar"></div>
 
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={'RSVP'}
+    subtitle={null}
+    highlight={'Wedding Location'}
+    content={'Details about the wedding ceremony and reception locations'}
+    image={{
+      enabled: true,
+      src: import('~/assets/images/house.jpg'),
+      alt: 'main house at the wedding location',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'RSVP',
+      href: getPermalink('/rsvp'),
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:mountain',
+    }}
+  />
 
   <!-- Locations 'link' block -->
   <Block
@@ -246,14 +260,6 @@ const meta = {
       target: '_self',
       rel: 'noopener',
       icon: 'tabler:mountain',
-    }}
-    callToAction2={{
-      enabled: false,
-      text: 'Button 2',
-      href: 'https://www.google.com',
-      target: '_blank',
-      rel: 'noopener',
-      icon: 'tabler:star',
     }}
   />
 
