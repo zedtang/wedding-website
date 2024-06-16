@@ -119,24 +119,14 @@ if (backgroundCss === '' || backgroundCss) {
                 {simpleButton && simpleButton.enabled && (
                   <div class="sm:mt-0 md:mt-6 flex w-full sm:w-auto">
                     {simpleButton.isAddToCalendar ? (
-                      <add-to-calendar-button
-                        class="btn btn-primary sm:mb-0 w-full"
-                        name={simpleButton.name}
-                        options={simpleButton.calendarOptions}
-                        location={simpleButton.location}
-                        startDate={simpleButton.startDate}
-                        endDate={simpleButton.endDate}
-                        startTime={simpleButton.startTime}
-                        endTime={simpleButton.endTime}
-                        timeZone={simpleButton.timeZone}
-                      >
+                      <button id="add-to-calendar-button" class="btn btn-primary sm:mb-0 w-full">
                         {simpleButton?.icon && (
                           <>
                             <Icon name={simpleButton.icon} class="w-5 h-5 mr-1 -ml-1.5" />
                           </>
                         )}
                         {simpleButton?.text}
-                      </add-to-calendar-button>
+                      </button>
                     ) : (
                       <a
                         class="btn btn-primary sm:mb-0 w-full"
@@ -203,3 +193,25 @@ if (backgroundCss === '' || backgroundCss) {
     </section>
   )
 }
+
+<script>
+  // Ensure this script runs after the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const config = {
+      name: "Jiaheng and Flora's Wedding",
+      description: "Join us for the wedding ceremony of Jiaheng and Flora.",
+      startDate: '2024-10-03',
+      endDate: '2024-10-03',
+      startTime: '15:30',
+      endTime: '22:00',
+      timeZone: 'America/Los_Angeles',
+      calendarOptions: "'Apple','Google'",
+      location: 'Grand Island Mansion 13415 Grand Island Rd, Walnut Grove, CA 95690, United States',
+      iCalFileName: "Jiaheng and Flora's Wedding",
+    };
+    const button = document.getElementById('add-to-calendar-button');
+    if (button) {
+      button.addEventListener('click', () => atcb_action(config, button));
+    }
+  });
+</script>
