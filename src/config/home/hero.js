@@ -17,6 +17,20 @@ const hero = {
   },
 
   // First CTA block
+  simpleButton: {
+    // Enable or disable first CTA
+    enabled: false,
+    // CTA text
+    text: 'Get template',
+    // Target html <a> tag
+    target: '_blank',
+    // Rel html <a> tag
+    rel: 'noopener',
+    // CTA icon
+    icon: 'tabler:download',
+  },
+
+  // First CTA block
   callToAction: {
     // Enable or disable first CTA
     enabled: false,

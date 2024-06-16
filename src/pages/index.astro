@@ -12,6 +12,7 @@ import Content from '~/components/widgets/Content.astro';
 import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import SimpleButton from '~/components/widgets/SimpleButton.astro';
 import Block from '~/components/widgets/Block.astro';
 import GlobeView from '~/components/widgets/GlobeView.jsx';
 
@@ -23,6 +24,7 @@ import faqs from '~/config/home/faqs';
 import features from '~/config/home/features';
 import features2 from '~/config/home/features2';
 import callToAction from '~/config/components/call-to-action';
+import simpleButton from '~/config/components/simple-button';
 
 import ImageGallery from '~/components/widgets/Gallery.jsx';
 import gallery from '~/config/home/gallery';
@@ -44,6 +46,13 @@ const meta = {
   {
     hero && hero.enabled && (
       <HeroExtraWide
+        simpleButton={{
+          enabled: hero.simpleButton.enabled,
+          text: hero.simpleButton.text,
+          target: hero.simpleButton.target,
+          rel: hero.simpleButton.rel,
+          icon: hero.simpleButton.icon,
+        }}
         callToAction={{
           enabled: hero.callToAction.enabled,
           text: hero.callToAction.text,
@@ -218,6 +227,20 @@ const meta = {
     subtitle={'OCTOBER 03, 2024'}
     highlight={'Wedding Day'}
     content={'3:30 PM - 10:00 PM'}
+simpleButton={{
+      enabled: true,
+      isAddToCalendar: true,
+      text: 'Add to Calendar',
+      icon: 'tabler:calendar',
+      name: "Jiaheng and Flora's Wedding",
+      calendarOptions: "'Apple','Google'",
+      location: 'Grand Island Mansion 13415 Grand Island Rd, Walnut Grove, CA 95690, United States',
+      startDate: '2024-10-03',
+      endDate: '2024-10-03',
+      startTime: '15:30',
+      endTime: '22:00',
+      timeZone: 'America/Los_Angeles'
+    }}
   />
 
   <!-- Locations 'link' block -->

@@ -1,8 +1,8 @@
-// Configuration for the site wide call to action
-// This component config can be used on any page to display an identical call to action
+// Configuration for the site wide simple button
+// This component config can be used on any page to display an identical simple button
 
-const callToAction = {
-  // If the call to action should be displayed
+const simpleButton = {
+  // If the simple button should be displayed
   enabled: false,
 
   // The title of the call to action component
@@ -18,8 +18,6 @@ const callToAction = {
     enabled: true,
     // The text of the button
     text: 'Get template',
-    // The link of the button
-    href: 'https://github.com/onwidget/astrowind',
     // The icon to the left of the button text
     icon: 'tabler:download',
     // HTML target attribute
@@ -29,4 +27,5 @@ const callToAction = {
   },
 };
 
-export default callToAction;
+export default simpleButton;
+

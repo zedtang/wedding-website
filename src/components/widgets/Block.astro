@@ -2,6 +2,23 @@
 import { Icon } from 'astro-icon/components';
 import { Picture } from '@astrojs/image/components';
 
+interface SimpleButton {
+  text?: string;
+  target?: string;
+  rel?: string;
+  icon?: string;
+  enabled?: boolean;
+  isAddToCalendar?: boolean;
+  calendarOptions?: string;
+  name?: string;
+  startDate?: string;
+  endDate?: string;
+  startTime?: string;
+  endTime?: string;
+  location?: string;
+  timeZone?: string;
+}
+
 interface CallToAction {
   text?: string;
   href?: string;
@@ -18,6 +35,7 @@ export interface Props {
   highlight?: any;
   backgroundCss?: any;
   content?: any;
+  simpleButton?: any | SimpleButton;
   callToAction?: any | CallToAction;
   callToAction2?: any | CallToAction;
   image?: string | any; // TODO: find HTMLElementProps
@@ -30,6 +48,7 @@ const {
   subtitle = await Astro.slots.render('subtitle'),
   highlight,
   content = await Astro.slots.render('content'),
+  simpleButton = await Astro.slots.render('simpleButton'),
   callToAction = await Astro.slots.render('callToAction'),
   callToAction2 = await Astro.slots.render('callToAction2'),
   image = await Astro.slots.render('image'),
@@ -97,6 +116,43 @@ if (backgroundCss === '' || backgroundCss) {
             </div>
             <div class="max-w-3xl mx-auto">
               <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+                {simpleButton && simpleButton.enabled && (
+                  <div class="sm:mt-0 md:mt-6 flex w-full sm:w-auto">
+                    {simpleButton.isAddToCalendar ? (
+                      <add-to-calendar-button
+                        class="btn btn-primary sm:mb-0 w-full"
+                        name={simpleButton.name}
+                        options={simpleButton.calendarOptions}
+                        location={simpleButton.location}
+                        startDate={simpleButton.startDate}
+                        endDate={simpleButton.endDate}
+                        startTime={simpleButton.startTime}
+                        endTime={simpleButton.endTime}
+                        timeZone={simpleButton.timeZone}
+                      >
+                        {simpleButton?.icon && (
+                          <>
+                            <Icon name={simpleButton.icon} class="w-5 h-5 mr-1 -ml-1.5" />
+                          </>
+                        )}
+                        {simpleButton?.text}
+                      </add-to-calendar-button>
+                    ) : (
+                      <a
+                        class="btn btn-primary sm:mb-0 w-full"
+                        target={simpleButton?.target}
+                        rel={simpleButton?.rel}
+                      >
+                        {simpleButton?.icon && (
+                          <>
+                            <Icon name={simpleButton.icon} class="w-5 h-5 mr-1 -ml-1.5" />
+                          </>
+                        )}
+                        {simpleButton?.text}
+                      </a>
+                    )}
+                  </div>
+                )}
                 {callToAction && callToAction.enabled && (
                   <div class="sm:mt-0 md:mt-6 flex w-full sm:w-auto">
                     {typeof callToAction === 'string' ? (
