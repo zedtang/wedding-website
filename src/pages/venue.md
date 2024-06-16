@@ -7,13 +7,13 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ![de_tierra](/assets/house.jpg)
 
-De Tierra is a beautiful property located in Salinas, California. The property is a residential rental property that we have booked for the entire weekend for our wedding celebration. It has a pool, vineyard, and several buildings with multiple rooms and beds where guests will be staying.
+The Sacramento River delta’s historic Grand Island Mansion is a uniquely spectacular Italian Renaissance styled villa. The Mansion is the largest private estate in Northern California, enchanting visitors and guests with a display of the finest features of classical architecture and expert craftsmanship.
 
 ## Address
 
 505 Corral de Tierra Rd. Salinas Ca 93908
 
-- Google Maps: [Directions Link](https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA)
+- Google Maps: [Directions Link](https://maps.app.goo.gl/sQCc5s8kCfEb15oaA)
 
 ## Gallery
 

@@ -17,8 +17,8 @@ Everyone coming to the wedding will have a place to stay on the property. You do
 
 ### Details
 
-- [Website](https://www.detierraevents.com/)
-- Address: 505 Corral de Tierra Rd. Salinas Ca 93908
-- Google Maps: [Directions Link](https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA)
+- [Website](https://grandislandmansion.com/)
+- Address: 13415 Grand Island Road, Walnut Grove, CA 95690
+- Google Maps: [Directions Link](https://maps.app.goo.gl/sQCc5s8kCfEb15oaA)
 
 ![house](/assets/house.jpg)

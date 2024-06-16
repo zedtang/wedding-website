@@ -5,12 +5,12 @@ const locations = {
   enabled: true,
 
   // Small highlight text at the top of the component
-  highlight: 'Wedding Location',
+  highlight: null,
 
   // Main title text
-  title: 'Location',
+  title: "Grand Island Mansion",
   // Subtitle text
-  subtitle: 'Details about the wedding venue',
+  subtitle: null,
 
   // Location cards to display
   locations: [
@@ -18,13 +18,13 @@ const locations = {
       name: 'Venue',
       address: {
         enabled: true,
-        line1: '505 Corral de Tierra Rd',
-        city: 'Salinas',
+        line1: '13415 Grand Island Road',
+        city: 'Walnut Grove',
         state: 'CA',
-        postcode: '93908',
+        postcode: '95690',
         country: 'United States',
       },
-      description: 'Venue location and details',
+      description: 'Grand Island Mansion',
       image: {
         alt: 'venue location',
         height: '140',
@@ -33,7 +33,7 @@ const locations = {
       buttons: [
         {
           text: 'Directions',
-          link: 'https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA', // google maps link
+          link: 'https://maps.app.goo.gl/sQCc5s8kCfEb15oaA', // google maps link
           target: '_blank', // opens in new tab
           size: 'large',
           icon: 'directions',

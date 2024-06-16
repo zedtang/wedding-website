@@ -18,7 +18,7 @@ Our wedding will also be fairly untraditional and unique to us.
 ## When and Where
 
 - When: Our wedding celebration will be from September 29th, 2024 to October 2nd, 2024 (Sunday to Wednesday)
-- Where: [505 Corral De Tierra Rd](https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA) - Salinas, CA
+- Where: [13415 Grand Island Road](https://maps.app.goo.gl/sQCc5s8kCfEb15oaA) - Walnut Grove, CA
 
 The actual wedding will be taking place on Monday - September 30th, 2024.
 
