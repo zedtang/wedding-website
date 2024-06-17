@@ -7,12 +7,12 @@ const note = {
   enabled: true,
 
   // Note text with HTML support
-  text: `<span class="fancy">J + F are getting married on ${SITE.weddingDate}</span>`,
+  text: `<span class="fancy">See you there~</span>`,
 
   // Optional note icon (prefix to the text)
   icon: {
     enabled: true,
-    name: 'tabler:calendar',
+    name: 'tabler:heart',
   },
 };
 

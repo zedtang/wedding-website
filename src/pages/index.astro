@@ -44,13 +44,6 @@ const meta = {
   {
     hero && hero.enabled && (
       <HeroExtraWide
-        simpleButton={{
-          enabled: hero.simpleButton.enabled,
-          text: hero.simpleButton.text,
-          target: hero.simpleButton.target,
-          rel: hero.simpleButton.rel,
-          icon: hero.simpleButton.icon,
-        }}
         callToAction={{
           enabled: hero.callToAction.enabled,
           text: hero.callToAction.text,
@@ -75,6 +68,43 @@ const meta = {
       </HeroExtraWide>
     )
   }
+
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={null}
+    subtitle={null}
+    highlight={'When & Where'}
+    content={'<br>October 3rd, 2024<br>3:30 pm<br><br>Grand Island Mansion<br>13415 Grand Island Road, Walnut Grove, CA 95690<br><br>'}
+    callToAction={{
+      enabled: true,
+      text: 'RSVP',
+      href: getPermalink('/rsvp'),
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:send',
+    }}
+  />
+
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={null}
+    subtitle={null}
+    highlight={null}
+    content={null}
+    image={{
+      enabled: true,
+      src: import('~/assets/images/garden.jpg'),
+      alt: 'garden view of the mansion',
+    }}
+    simpleButton={{
+      enabled: true,
+      isAddToCalendar: true,
+      text: 'Add to Calendar',
+      icon: 'tabler:calendar',
+    }}
+  />
 
   <!-- Note Widget ******************* -->
 
@@ -217,59 +247,5 @@ const meta = {
       </CallToAction>
     )
   }
-
-  <!-- Locations 'link' block -->
-  <Block
-    enabled={true}
-    title={null}
-    subtitle={'OCTOBER 03, 2024'}
-    highlight={'Wedding Day'}
-    content={'3:30 PM - 10:00 PM'}
-simpleButton={{
-      enabled: true,
-      isAddToCalendar: true,
-      text: 'Add to Calendar',
-      icon: 'tabler:calendar',
-    }}
-  />
-
-  <!-- Locations 'link' block -->
-  <Block
-    enabled={true}
-    title={null}
-    subtitle={'Grand Island Mansion'}
-    highlight={'Wedding Location'}
-    content={'13415 Grand Island Road, Walnut Grove, CA 95690'}
-    callToAction={{
-      enabled: true,
-      text: 'View on Google Maps',
-      href: 'https://www.google.com/maps/search/?api=1&query=Grand+Island+Mansion,13415+Grand+Island+Road,Walnut+Grove,CA+95690',
-      target: '_blank',
-      rel: 'noopener',
-      icon: 'tabler:map-pin',
-    }}
-  />
-
-  <!-- Locations 'link' block -->
-  <Block
-    enabled={true}
-    title={null}
-    subtitle={null}
-    highlight={null}
-    content={null}
-    image={{
-      enabled: true,
-      src: import('~/assets/images/house.jpg'),
-      alt: 'main house at the wedding location',
-    }}
-    callToAction={{
-      enabled: true,
-      text: 'RSVP',
-      href: getPermalink('/rsvp'),
-      target: '_self',
-      rel: 'noopener',
-      icon: 'tabler:send',
-    }}
-  />
 
 </Layout>
