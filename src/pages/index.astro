@@ -240,6 +240,23 @@ simpleButton={{
     subtitle={'Grand Island Mansion'}
     highlight={'Wedding Location'}
     content={'13415 Grand Island Road, Walnut Grove, CA 95690'}
+    callToAction={{
+      enabled: true,
+      text: 'View on Google Maps',
+      href: 'https://www.google.com/maps/search/?api=1&query=Grand+Island+Mansion,13415+Grand+Island+Road,Walnut+Grove,CA+95690',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:map-pin',
+    }}
+  />
+
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={null}
+    subtitle={null}
+    highlight={null}
+    content={null}
     image={{
       enabled: true,
       src: import('~/assets/images/house.jpg'),
