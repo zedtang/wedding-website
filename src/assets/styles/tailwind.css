@@ -50,7 +50,7 @@
   .landing-background::before {
     content: "";
     @apply absolute top-0 left-0 w-full h-full bg-center bg-cover;
-    background-image: url('/public/assets/blue-flower.jpg');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, var(--aw-color-bg-page) 99%), url('/public/assets/blue-flower.jpg');
     animation: zoom-in 20s infinite;
   }
 
