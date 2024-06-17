@@ -70,7 +70,7 @@ if (backgroundCss === '' || backgroundCss) {
           <div class="md:mx-auto text-center max-w-3xl">
             {highlight && (
               <p
-                class="text-base text-primary dark:text-sage-200 font-semibold tracking-wide uppercase"
+                class="text-base text-primary dark:text-sage-200 font-semibold tracking-wide extra-fancy extra-fancy-double-spaced"
                 set:html={highlight}
               />
             )}
@@ -90,7 +90,7 @@ if (backgroundCss === '' || backgroundCss) {
 
             {content && (
               <p
-                class="lg:mb-0 md:mb-0 mb-8 max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400"
+                class="lg:mb-0 md:mb-0 mb-8 max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400 fancy"
                 set:html={content}
               />
             )}
@@ -119,7 +119,7 @@ if (backgroundCss === '' || backgroundCss) {
                 {simpleButton && simpleButton.enabled && (
                   <div class="sm:mt-0 md:mt-6 flex w-full sm:w-auto">
                     {simpleButton.isAddToCalendar ? (
-                      <button id="add-to-calendar-button" class="btn btn-primary sm:mb-0 w-full">
+                      <button id="add-to-calendar-button" class="btn-custom sm:mb-0 w-full">
                         {simpleButton?.icon && (
                           <>
                             <Icon name={simpleButton.icon} class="w-5 h-5 mr-1 -ml-1.5" />
@@ -149,7 +149,7 @@ if (backgroundCss === '' || backgroundCss) {
                       <Fragment set:html={callToAction} />
                     ) : (
                       <a
-                        class="btn btn-primary sm:mb-0 w-full"
+                        class="btn-custom sm:mb-0 w-full"
                         href={callToAction?.href}
                         target={callToAction?.target}
                         rel={callToAction?.rel}
