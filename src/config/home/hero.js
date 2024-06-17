@@ -13,7 +13,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">We are getting married! Come celebrate with us at our wedding.</span>`,
+    text: `<span class="fancy">We are getting married!</span>`,
   },
 
   // First CTA block

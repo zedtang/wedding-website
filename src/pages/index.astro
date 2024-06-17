@@ -50,26 +50,10 @@ const meta = {
   {
     hero && hero.enabled && (
       <HeroExtraWide
-        callToAction={{
-          enabled: hero.callToAction.enabled,
-          text: hero.callToAction.text,
-          href: hero.callToAction.href,
-          target: hero.callToAction.target,
-          rel: hero.callToAction.rel,
-          icon: hero.callToAction.icon,
-        }}
-        callToAction2={{
-          enabled: hero.callToAction2.enabled,
-          text: hero.callToAction2.text,
-          href: hero.callToAction2.href,
-          target: hero.callToAction2.target,
-          rel: hero.callToAction2.rel,
-          icon: hero.callToAction2.icon,
-        }}
         image={{ enabled: hero.image.enabled, src: hero.image.src, alt: hero.image.alt }}
       >
-        {hero.title.enabled && <div slot="title" set:html={hero.title.text}></div>}
-        {hero.subtitle.enabled && <div slot="subtitle" set:html={hero.subtitle.text}></div>}
+        {hero.title.enabled && <div slot="title" set:html={`<span class="extra-fancy extra-fancy-double-spaced">You are Invited</span>`}></div>}
+        {hero.subtitle.enabled && <div slot="subtitle" set:html={`<span class="fancy">You are the most important people in our lives.<br>We sincerely invite you to share this happy moment with us.</span>`}></div>}
       </HeroExtraWide>
     )
   }
