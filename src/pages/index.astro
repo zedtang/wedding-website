@@ -81,6 +81,7 @@ const meta = {
     subtitle={null}
     highlight={'When & Where'}
     content={'<br>October 3rd, 2024<br>3:30 pm<br><br>Grand Island Mansion<br>13415 Grand Island Road, Walnut Grove, CA 95690<br><br>'}
+    backgroundCss=null
     callToAction={{
       enabled: true,
       text: 'RSVP',
@@ -98,6 +99,7 @@ const meta = {
     subtitle={null}
     highlight={null}
     content={null}
+    backgroundCss=null
     image={{
       enabled: true,
       src: import('~/assets/images/garden.jpg'),
@@ -113,7 +115,9 @@ const meta = {
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <Note
+    backgroundCss=null
+  />
 
   {gallery && gallery.enabled && <ImageGallery client:only="react" photos={gallery.photos} layout={gallery.layout} />}
 
@@ -126,6 +130,7 @@ const meta = {
         title={features.title}
         subtitle={features.subtitle}
         items={features.items}
+        backgroundCss=null
       />
     )
   }
@@ -219,6 +224,7 @@ const meta = {
     title={'Photo Gallery'}
     highlight={'Gallery'}
     content={'Traveling has been a huge part of our lives. We have taken photos all over the globe and have a special gallery here to highlight some of our favorite moments as a couple.'}
+    backgroundCss=null
     image={{
       enabled: true,
       src: import('~/assets/images/g-and-l-streets.jpg'),

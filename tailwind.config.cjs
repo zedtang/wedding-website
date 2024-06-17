@@ -22,6 +22,9 @@ module.exports = {
           900: '#4d5d53',
         },
       },
+      backgroundColor: {
+        'transparent-header': 'transparent',
+      },
       fontFamily: {
         sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],
         serif: ['var(--aw-font-serif)', ...defaultTheme.fontFamily.serif],

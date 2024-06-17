@@ -37,6 +37,11 @@
 }
 
 @layer utilities {
+  .transparent-header {
+    background-color: transparent !important;
+    backdrop-filter: blur(10px); /* Adjust blur value as needed */
+  }
+
   .landing-background {
     @apply relative h-screen w-full overflow-hidden;
     @apply flex flex-col items-center justify-center;
