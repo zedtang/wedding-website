@@ -39,13 +39,18 @@
 @layer utilities {
   .landing-background {
     @apply relative h-screen w-full overflow-hidden;
+    @apply flex flex-col items-center justify-center;
   }
 
   .landing-background::before {
     content: "";
     @apply absolute top-0 left-0 w-full h-full bg-center bg-cover;
-    background-image: url('/public/assets/aerial.jpg');
+    background-image: url('/public/assets/blue-flower.jpg');
     animation: zoom-in 20s infinite;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center text-white;
   }
 
   @keyframes zoom-in {

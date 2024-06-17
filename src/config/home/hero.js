@@ -13,7 +13,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">We are getting married! Join us in our celebration.</span>`,
+    text: `<span class="fancy">We are getting married! Come celebrate with us at our wedding.</span>`,
   },
 
   // First CTA block
@@ -37,7 +37,7 @@ const hero = {
     // CTA text
     text: 'Get template',
     // CTA link
-    href: 'https://github.com/grantbirki/gl',
+    href: 'https://github.com/zedtang/wedding-website',
     // Target html <a> tag
     target: '_blank',
     // Rel html <a> tag
@@ -68,7 +68,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/hero.png'),
     // Image alt text
-    alt: 'Grant and Leah',
+    alt: 'Jiaheng and Flora',
   },
 };
 
