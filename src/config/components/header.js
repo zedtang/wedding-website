@@ -56,7 +56,7 @@ const headerData = {
     //   // text to display on the button
     //   text: 'Download',
     //   // link to go to when the button is clicked
-    //   href: 'https://github.com/grantbirki/astrowind',
+    //   href: 'https://github.com/onwidget/astrowind',
     //   // can be 'button', 'primary', or 'ghost'
     //   type: 'button',
     //   // HTML rel attribute
