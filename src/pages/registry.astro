@@ -1,20 +1,33 @@
 ---
-import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
 
-const frontmatter = {
-  title: 'Wedding Registry',
-};
+import Hero from '~/components/widgets/Hero.astro';
+import hero from '~/config/pages/registry/hero';
 
 const meta = {
-  title: 'Wedding Registry',
-  description: 'Visit our wedding registry.',
+  title: SITE.title,
+  description: SITE.description,
   dontUseTitleTemplate: true,
 };
 ---
 
-<MarkdownLayout frontmatter={frontmatter}>
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  {
+    hero && hero.enabled && (
+      <Hero
+        padding={hero.padding}
+      >
+        {hero.title.enabled && <Fragment slot="title" set:html={hero.title.text} />}
+
+        {hero.subtitle.enabled && <Fragment slot="subtitle" set:html={hero.subtitle.text} />}
+      </Hero>
+    )
+  }
   <!-- Embed Registry Script -->
-  <div>
+  <div class="registry-container">
     <script id='script_myregistry_giftlist_iframe' type='text/javascript' src='//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=OqBrzTf9d5SCpopDNCL7SA2&v=2'></script>
   </div>
-</MarkdownLayout>
+</Layout>
