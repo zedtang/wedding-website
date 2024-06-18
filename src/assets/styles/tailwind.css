@@ -52,7 +52,8 @@
   }
 
   .registry-container iframe {
-    @apply w-full h-[600px] border-0;
+    @apply w-full border-0;
+    height: 2350px;
   }
 }
 

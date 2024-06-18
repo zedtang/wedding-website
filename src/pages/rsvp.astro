@@ -42,8 +42,20 @@ const meta = {
     </iframe>
   </div>
 
+  <!-- Hero Widget ******************* -->
 
-    <!-- Poll.ly Embed using iframe -->
+  {
+    hero && hero.enabled && (
+      <Hero
+        padding={hero.padding}
+      >
+        {hero.title.enabled && <Fragment slot="title" set:html={`<span class="fancy">Song Request</span>`} />}
+
+        {<Fragment slot="subtitle" set:html={`<span class="fancy">Please kindly upvote the songs you like, and/or add new songs to the list.</span>`} />}
+      </Hero>
+    )
+  }
+  <!-- Poll.ly Embed using iframe -->
   <div class="registry-container">
     <iframe
       src="https://poll.ly/#/L8ZZC1GaQpBKnJ3cT7xv"
