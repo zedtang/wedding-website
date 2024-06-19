@@ -17,7 +17,7 @@ permissions:
 
 # set an environment variable for use in all the jobs pointing the site_url
 env:
-  site_url: https://gl.birki.io
+  site_url: https://jiahengandflora.love
 
 jobs:
   # branch-deploy trigger job

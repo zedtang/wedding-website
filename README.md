@@ -4,7 +4,7 @@
 
 Wedding website for Jiaheng and Flora
 
-[gl.birki.io](https://gl.birki.io) 🔗
+[jiahengandflora.love](https://jiahengandflora.love) 🔗
 
 ![homepage](src/assets/images/default.png)
 

@@ -7,7 +7,7 @@ const CONFIG = {
   // The name of the website
   name: 'J + F',
   // The origin of the website (without trailing slash)
-  origin: 'https://gl.birki.io',
+  origin: 'https://jiahengandflora.love',
   // The base pathname of the website
   basePathname: '/',
   // If the website uses trailing slashes in the URLs
