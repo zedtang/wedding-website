@@ -13,14 +13,12 @@ const footerData = {
       // List of links to be displayed in the section
       links: [
         { text: 'FAQs', href: '/details' },
-        { text: 'Location', href: getPermalink('/location') },
       ],
     },
     {
       title: 'Invite',
       links: [
         { text: 'RSVP', href: '/rsvp' },
-        { text: 'Digital Save the Date', href: '/save-the-date' },
       ],
     },
     {

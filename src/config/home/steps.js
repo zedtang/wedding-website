@@ -35,12 +35,6 @@ const steps = {
       icon: 'tabler:check',
     },
   ],
-
-  // The image to be displayed on the right side of the component
-  image: {
-    src: import('~/assets/images/save-the-date.png'),
-    alt: 'Steps image',
-  },
 };
 
 export default steps;
