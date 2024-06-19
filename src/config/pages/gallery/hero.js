@@ -14,7 +14,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">Highlights from the adventures of Grant and Leah's lives</span>`,
+    text: `<span class="fancy">Highlights from the adventures of Jiaheng and Flora's lives.<br>Please give this page a moment to load as it has tons of high res photos!</span>`,
   },
 
   // First CTA block
@@ -55,7 +55,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/hero.png'),
     // Image alt text
-    alt: 'Grant and Leah',
+    alt: 'Jiaheng and Flora',
   },
 };
 
