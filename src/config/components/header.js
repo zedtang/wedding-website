@@ -7,36 +7,18 @@ import { getPermalink } from '~/utils/permalinks';
 const headerData = {
   // List of links to be displayed in the header
   links: [
-    {
-      text: 'Location',
-      links: [
-        {
-          text: 'Location',
-          href: getPermalink('/location'),
-        },
-        {
-          text: 'Accommodations',
-          href: '/accommodations',
-        },
-        {
-          text: 'Venue',
-          href: '/venue',
-        },
-      ],
-    },
-
     // A single link with no dropdown
-    {
-      text: 'Registry',
-      href: '/registry',
-    },
-    {
-      text: 'Details',
-      href: '/details',
-    },
     {
       text: 'Gallery',
       href: getPermalink('/gallery'),
+    },
+    {
+      text: 'FAQs',
+      href: '/details',
+    },
+    {
+      text: 'Registry',
+      href: '/registry',
     },
 
     // // The blog link is a special case, it uses the getBlogPermalink function
