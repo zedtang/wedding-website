@@ -5,10 +5,10 @@ layout: '~/layouts/MarkdownPageLayout.astro'
 ## What should I wear?
 
 We’re so glad you asked - but really, whatever you feel your happiest self in! Our dress code is California Garden Party attire in pastel colors. So ladies, we recommend light-colored dresses that are knee-length or longer.
- ![dress code ladies](public/assets/dress_code_ladies.png)
+ ![dress code ladies](/assets/dress_code_ladies.png)
 
 For gentlemen, we recommend light-colored shirts paired with trouser, and tie is not necessary.
- ![dress code gentlemen](public/assets/dress_code_gentlemen.png)
+ ![dress code gentlemen](/assets/dress_code_gentlemen.png)
 
 If you have any questions, fit pics or concerns - please reach out to Flora or Jiaheng.
 

@@ -8,7 +8,7 @@ const gallery = {
   enabled: true,
 
   // The gallery style
-  layout: 'masonry',
+  layout: 'rows',
 
   // Collection of images to display in the gallery
   photos: photos,
