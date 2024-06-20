@@ -1,58 +1,58 @@
 [
   {
     "key": 1,
-    "alt": "A7C00346.jpg",
-    "src": "/assets/gallery/A7C00346.jpg",
-    "width": 2318,
-    "height": 1536
-  },
-  {
-    "key": 2,
     "alt": "A7C01002.JPG",
     "src": "/assets/gallery/A7C01002.JPG",
     "width": 1536,
     "height": 2304
   },
   {
-    "key": 3,
+    "key": 2,
     "alt": "A7C01003.jpg",
     "src": "/assets/gallery/A7C01003.jpg",
     "width": 2048,
     "height": 1536
   },
   {
-    "key": 4,
+    "key": 3,
     "alt": "A7C01004.JPG",
     "src": "/assets/gallery/A7C01004.JPG",
     "width": 2048,
     "height": 1536
   },
   {
-    "key": 5,
+    "key": 4,
     "alt": "A7C01005.JPG",
     "src": "/assets/gallery/A7C01005.JPG",
     "width": 2266,
     "height": 1536
   },
   {
-    "key": 6,
+    "key": 5,
     "alt": "A7C01006.jpg",
     "src": "/assets/gallery/A7C01006.jpg",
     "width": 2048,
     "height": 1536
   },
   {
-    "key": 7,
+    "key": 6,
     "alt": "A7C01007.jpg",
     "src": "/assets/gallery/A7C01007.jpg",
     "width": 1157,
     "height": 771
   },
   {
-    "key": 8,
+    "key": 7,
     "alt": "A7C01053.JPG",
     "src": "/assets/gallery/A7C01053.JPG",
     "width": 2304,
+    "height": 1536
+  },
+  {
+    "key": 8,
+    "alt": "A7C01234.JPG",
+    "src": "/assets/gallery/A7C01234.JPG",
+    "width": 2318,
     "height": 1536
   },
   {
@@ -204,8 +204,8 @@
   },
   {
     "key": 30,
-    "alt": "IMG_0350.JPG",
-    "src": "/assets/gallery/IMG_0350.JPG",
+    "alt": "IMG_0923.jpeg",
+    "src": "/assets/gallery/IMG_0923.jpeg",
     "width": 2984,
     "height": 1536
   },
@@ -736,15 +736,15 @@
   },
   {
     "key": 106,
-    "alt": "IMG_9900.jpeg",
-    "src": "/assets/gallery/IMG_9900.jpeg",
+    "alt": "IMG_9878.jpeg",
+    "src": "/assets/gallery/IMG_9878.jpeg",
     "width": 1170,
     "height": 1997
   },
   {
     "key": 107,
-    "alt": "IMG_9901.JPG",
-    "src": "/assets/gallery/IMG_9901.JPG",
+    "alt": "IMG_9900.JPG",
+    "src": "/assets/gallery/IMG_9900.JPG",
     "width": 1536,
     "height": 2304
   },
