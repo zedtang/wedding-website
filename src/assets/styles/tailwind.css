@@ -58,6 +58,11 @@
 }
 
 @layer utilities {
+  .subtitle-adjust {
+    position: relative;
+    transform: translate(-30px, -80px); /* Adjust these values as needed */
+  }
+
   .transparent-header {
     background-color: transparent !important;
     backdrop-filter: blur(10px); /* Adjust blur value as needed */
