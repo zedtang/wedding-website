@@ -14,7 +14,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">Visit our wedding registry.</span>`,
+    text: `<span class="fancy">We are so grateful you choose to celebrate with us. This is of course optional.</span>`,
   },
 };
 
