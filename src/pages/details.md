@@ -7,14 +7,14 @@ layout: '~/layouts/MarkdownPageLayout.astro'
 We’re so glad you asked - but really, whatever you feel your happiest self in! Our dress code is California Garden Party attire in pastel colors. So ladies, we recommend light-colored dresses that are knee-length or longer.
  ![dress code ladies](/assets/dress_code_ladies.png)
 
-For gentlemen, we recommend light-colored shirts paired with trouser, and tie is not necessary.
+For gentlemen, we recommend light-colored shirts paired with shorts, and tie is not necessary.
  ![dress code gentlemen](/assets/dress_code_gentlemen.png)
 
 If you have any questions, fit pics or concerns - please reach out to Flora or Jiaheng.
 
 ## What’s the weather?
 
-The expected temperature of October there ranges from 13°C to 24°C (55°F to 75°F).
+The expected temperature of October there ranges from 14°C to 34°C (58°F to 93°F). We'll provide handheld fans and cooling wipes for guests to stay cool.
 Given that ceremony will be outdoor and celebration will continue into the evening, pls keep in mind the change of temperature and pack layers.
 
 ## Can I bring a plus one?
